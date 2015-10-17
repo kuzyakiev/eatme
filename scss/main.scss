@@ -1,0 +1,54 @@
+// BASE
+// ---------------------------- //
+html, body {
+	width: 100%;
+	height: 100%;
+}
+.table-box {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.cell-box {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+// BODY
+// ---------------------------- //
+body {
+	background: #2c8b45;
+	transition: background .7s ease;
+}
+body.fp-viewing-1 {
+	background: #d4643c;
+}
+body.fp-viewing-5 {
+	background: #d4643c;
+}
+body.fp-viewing-6 {
+	background: #9c5db7;
+}
+body.fp-viewing-7 {
+	background: #d15e3c;
+}
+body.fp-viewing-8 {
+	background: #6f5d92;
+}
+body.fp-viewing-9 {
+	background: #44887c;
+}
+body.fp-viewing-10 {
+	background: #d59841;
+}
+body.fp-viewing-11 {
+	background: #5b6690;
+}
+body.fp-viewing-12 {
+	background: #d4643c;
+}
