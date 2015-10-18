@@ -1,6 +1,54 @@
 $easeTime: .7s;
 
 
+
+@font-face {
+    font-family: 'Cooper';
+    src: url('../fonts/CooperLightCBT_2.eot');
+    src: url('../fonts/CooperLightCBT_2.eot') format('embedded-opentype'),
+         url('../fonts/CooperLightCBT_2.woff2') format('woff2'),
+         url('../fonts/CooperLightCBT_2.woff') format('woff'),
+         url('../fonts/CooperLightCBT_2.ttf') format('truetype'),
+         url('../fonts/CooperLightCBT_2.svg#CooperLightCBT_2') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Cooper';
+    src: url('../fonts/CooperLightCBTItalic_2.eot');
+    src: url('../fonts/CooperLightCBTItalic_2.eot') format('embedded-opentype'),
+         url('../fonts/CooperLightCBTItalic_2.woff2') format('woff2'),
+         url('../fonts/CooperLightCBTItalic_2.woff') format('woff'),
+         url('../fonts/CooperLightCBTItalic_2.ttf') format('truetype'),
+         url('../fonts/CooperLightCBTItalic_2.svg#CooperLightCBTItalic_2') format('svg');
+         font-style: italic;
+         font-weight: normal;
+}
+@font-face {
+    font-family: 'Cooper';
+    src: url('../fonts/CooperLightCBTBold_2.eot');
+    src: url('../fonts/CooperLightCBTBold_2.eot') format('embedded-opentype'),
+         url('../fonts/CooperLightCBTBold_2.woff2') format('woff2'),
+         url('../fonts/CooperLightCBTBold_2.woff') format('woff'),
+         url('../fonts/CooperLightCBTBold_2.ttf') format('truetype'),
+         url('../fonts/CooperLightCBTBold_2.svg#CooperLightCBTBold_2') format('svg');
+         font-weight: bold;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Cooper';
+    src: url('../fonts/CooperLightCBTBoldItalic_2.eot');
+    src: url('../fonts/CooperLightCBTBoldItalic_2.eot') format('embedded-opentype'),
+         url('../fonts/CooperLightCBTBoldItalic_2.woff2') format('woff2'),
+         url('../fonts/CooperLightCBTBoldItalic_2.woff') format('woff'),
+         url('../fonts/CooperLightCBTBoldItalic_2.ttf') format('truetype'),
+         url('../fonts/CooperLightCBTBoldItalic_2.svg#CooperLightCBTBoldItalic_2') format('svg');
+         font-weight: bold;
+         font-style: italic;
+}
+
+
+
 // BASE
 // ---------------------------- //
 a:hover {
@@ -13,7 +61,9 @@ html, body {
 }
 body {
 	color: #fff;
+	font-family: 'Cooper';
 }
+
 .table-box {
 	display: table;
 	width: 100%;
@@ -31,6 +81,9 @@ body {
 	top: 30px;
 	right: 30px;
 	font-size: 21px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	z-index: 10;
 }
 
 // link
@@ -42,6 +95,8 @@ body {
 	padding: 16px 40px;
 	border-radius: 50px;
 	margin: 30px;
+	font-style: italic;
+	font-weight: bold;
 }
 
 
@@ -99,8 +154,10 @@ body.fp-viewing-12 {
 	transition: transform $easeTime ease;
 	z-index: 2;
 
-	.fp-viewing-5 & {
-		transform: translateY(-100vh);
+	transform: translateY(-100vh);
+
+	.fp-viewing-0 &, .fp-viewing-1 &, .fp-viewing-2 &, .fp-viewing-3 &, .fp-viewing-4 & {
+		transform: translateY(0);
 	}
 
 	.intro-text {
@@ -178,7 +235,9 @@ body.fp-viewing-12 {
 			}
 		}
 	}
+	
 
+	// food-text
 	.food-text {
 		display: none;
 		position:  absolute;
@@ -187,16 +246,36 @@ body.fp-viewing-12 {
 		top: 50%;
 		margin-top: -75px;
 
+		&.food-text-1 {
+			h1 {
+				font-style: italic;
+				font-weight: bold;
+				letter-spacing: 2px;
+				font-size: 44px;
+			}
+			p {
+				font-size: 24px;
+				font-style: italic;
+			}
+		}
+
 		.time {
 			font-size: 28px;
 			margin-top: 15px;
+			font-style: italic;
+			letter-spacing: 1px;
 		}
 		.description {
 			font-size: 28px;
 			color: #ffcc01;
+			font-style: italic;
+			font-weight: bold;
+			letter-spacing: 2px;
 		}
 		.about {
 			font-size: 18px;
+			font-style: italic;
+			letter-spacing: 1px;
 		}
 
 		&.food-text-1 {
