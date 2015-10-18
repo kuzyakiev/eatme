@@ -1,6 +1,13 @@
+a:hover {
+  color: inherit;
+  text-decoration: none; }
+
 html, body {
   width: 100%;
   height: 100%; }
+
+body {
+  color: #fff; }
 
 .table-box {
   display: table;
@@ -11,12 +18,24 @@ html, body {
   display: table-cell;
   vertical-align: middle; }
 
+.phone {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-size: 21px; }
+
+.link {
+  display: inline-block;
+  color: #fff;
+  font-size: 21px;
+  background: #2d7942;
+  padding: 16px 40px;
+  border-radius: 50px;
+  margin: 30px; }
+
 body {
   background: #2c8b45;
-  transition: background .7s ease; }
-
-body.fp-viewing-1 {
-  background: #d4643c; }
+  transition: background 0.7s ease; }
 
 body.fp-viewing-5 {
   background: #d4643c; }
@@ -41,5 +60,81 @@ body.fp-viewing-11 {
 
 body.fp-viewing-12 {
   background: #d4643c; }
+
+.start-screen {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.7s ease;
+  z-index: 2; }
+  .fp-viewing-5 .start-screen {
+    transform: translateY(-100vh); }
+  .start-screen .intro-text {
+    height: 150px;
+    position: relative; }
+  .start-screen .food {
+    position: relative;
+    display: inline-block; }
+  .start-screen .food-arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../img/food-arrow.svg) center no-repeat;
+    position: absolute;
+    transition: opacity 0.7s ease;
+    opacity: 0; }
+    .start-screen .food-arrow.food-arrow-1 {
+      top: 165px;
+      left: 20px; }
+      .fp-viewing-1 .start-screen .food-arrow.food-arrow-1 {
+        opacity: 1; }
+    .start-screen .food-arrow.food-arrow-2 {
+      top: 70px;
+      left: 260px;
+      transform: rotate(58deg); }
+      .fp-viewing-2 .start-screen .food-arrow.food-arrow-2 {
+        opacity: 1; }
+    .start-screen .food-arrow.food-arrow-3 {
+      top: 90px;
+      left: 400px; }
+      .fp-viewing-3 .start-screen .food-arrow.food-arrow-3 {
+        opacity: 1; }
+    .start-screen .food-arrow.food-arrow-4 {
+      top: 420px;
+      right: 140px;
+      transform: rotate(138deg); }
+      .fp-viewing-3 .start-screen .food-arrow.food-arrow-4 {
+        opacity: 1; }
+    .start-screen .food-arrow.food-arrow-5 {
+      top: 400px;
+      left: 100px;
+      transform: rotate(-112deg); }
+      .fp-viewing-4 .start-screen .food-arrow.food-arrow-5 {
+        opacity: 1; }
+    .start-screen .food-arrow.food-arrow-6 {
+      top: 150px;
+      left: 260px;
+      transform: rotate(9deg); }
+      .fp-viewing-4 .start-screen .food-arrow.food-arrow-6 {
+        opacity: 1; }
+  .start-screen .food-text {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    margin-top: -75px; }
+    .start-screen .food-text .time {
+      font-size: 28px;
+      margin-top: 15px; }
+    .start-screen .food-text .description {
+      font-size: 28px;
+      color: #ffcc01; }
+    .start-screen .food-text .about {
+      font-size: 18px; }
+    .start-screen .food-text.food-text-1 {
+      display: block; }
 
 /*# sourceMappingURL=main.css.map */
