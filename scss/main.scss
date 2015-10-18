@@ -1,4 +1,5 @@
 $easeTime: .7s;
+$animationTime: .35s;
 
 
 
@@ -171,6 +172,8 @@ body.fp-viewing-12 {
 		position: relative;
 		display: inline-block;
 	}
+
+	// arrow
 	.food-arrow {
 		display: block;
 		width: 40px;
@@ -186,6 +189,8 @@ body.fp-viewing-12 {
 			top: 165px;
 			left: 20px;
 
+			animation: arrow-1 $animationTime ease 0s infinite alternate;
+
 			.fp-viewing-1 & {
 				opacity: 1;
 			}
@@ -195,13 +200,17 @@ body.fp-viewing-12 {
 			left: 260px;
 			transform: rotate(58deg);
 
+			animation: arrow-2 $animationTime ease 0s infinite alternate;
+
 			.fp-viewing-2 & {
 				opacity: 1;
 			}
 		}
 		&.food-arrow-3 {
-			top: 90px;
+			top: 80px;
 			left: 400px;
+
+			animation: arrow-1 $animationTime ease 0s infinite alternate;
 
 			.fp-viewing-3 & {
 				opacity: 1;
@@ -212,6 +221,8 @@ body.fp-viewing-12 {
 			right: 140px;
 			 transform: rotate(138deg);
 
+			 animation: arrow-4 $animationTime ease 0s infinite alternate;
+
 			.fp-viewing-3 & {
 				opacity: 1;
 			}
@@ -219,7 +230,9 @@ body.fp-viewing-12 {
 		&.food-arrow-5 {
 			top: 400px;
 			left: 100px;
-			transform: rotate(-112deg);
+			transform: rotate(-117deg);
+
+			animation: arrow-5 $animationTime ease 0s infinite alternate;
 
 			.fp-viewing-4 & {
 				opacity: 1;
@@ -229,6 +242,8 @@ body.fp-viewing-12 {
 			top: 150px;
 			left: 260px;
 			transform: rotate(9deg);
+
+			animation: arrow-6 $animationTime ease 0s infinite alternate;
 
 			.fp-viewing-4 & {
 				opacity: 1;
@@ -292,8 +307,46 @@ body.fp-viewing-12 {
 
 
 
-
-
+@keyframes arrow-1 {
+    0% {
+		transform: translateY(10px);
+    }
+    100% {
+		transform: translateY(0);
+    }
+}
+@keyframes arrow-2 {
+    0% {
+		transform: translate(10px, -10px) rotate(58deg);
+    }
+    100% {
+		transform: translate(0) rotate(58deg);
+    }
+}
+@keyframes arrow-4 {
+    0% {
+		transform: translate(10px, 10px) rotate(138deg);
+    }
+    100% {
+		transform: translate(0) rotate(138deg);
+    }
+}
+@keyframes arrow-5 {
+    0% {
+		transform: translate(-10px, 5px) rotate(-117deg);
+    }
+    100% {
+		transform: translate(0) rotate(-117deg);
+    }
+}
+@keyframes arrow-6 {
+    0% {
+		transform: translate(-2px, 10px) rotate(9deg);
+    }
+    100% {
+		transform: translate(0) rotate(9deg);
+    }
+}
 
 
 
