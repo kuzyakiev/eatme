@@ -3,10 +3,10 @@ $(document).ready(function() {
 		onLeave: function(index, nextIndex, direction){
 			var textNum = index + 1;
 
-			$('.food-text').fadeOut(function(){
+			$('.food-text').fadeOut(300, function(){
 
 			});
-			$('.food-text' + '-' + nextIndex).fadeIn(300);
+			$('.food-text' + '-' + nextIndex).delay(300).fadeIn(300);
 		}
 	});
 
@@ -26,4 +26,7 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
+
+
+
 });
