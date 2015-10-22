@@ -166,6 +166,7 @@ body.fp-viewing-12 {
 	left: 0;
 	transition: transform $easeTime ease;
 	z-index: 2;
+	overflow: hidden;
 
 	transform: translateY(-100vh);
 
@@ -202,7 +203,7 @@ body.fp-viewing-12 {
 		opacity: 0;
 
 		&.food-arrow-1 {
-			top: 165px;
+			top: 105px;
 			left: 20px;
 
 			animation: arrow-1 $animationTime ease 0s infinite alternate;
@@ -212,8 +213,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-2 {
-			top: 70px;
-			left: 260px;
+			top: 50px;
+			left: 190px;
 			transform: rotate(58deg);
 
 			animation: arrow-2 $animationTime ease 0s infinite alternate;
@@ -223,8 +224,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-3 {
-			top: 80px;
-			left: 400px;
+			top: 45px;
+			left: 290px;
 
 			animation: arrow-1 $animationTime ease 0s infinite alternate;
 
@@ -233,8 +234,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-4 {
-			top: 420px;
-			right: 140px;
+			top: 300px;
+			right: 100px;
 			 transform: rotate(138deg);
 
 			 animation: arrow-4 $animationTime ease 0s infinite alternate;
@@ -244,8 +245,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-5 {
-			top: 400px;
-			left: 100px;
+			top: 290px;
+			left: 60px;
 			transform: rotate(-117deg);
 
 			animation: arrow-5 $animationTime ease 0s infinite alternate;
@@ -255,8 +256,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-6 {
-			top: 150px;
-			left: 260px;
+			top: 100px;
+			left: 190px;
 			transform: rotate(9deg);
 
 			animation: arrow-6 $animationTime ease 0s infinite alternate;
@@ -275,7 +276,7 @@ body.fp-viewing-12 {
 		height: 100%;
 		width: 100%;
 		top: 50%;
-		margin-top: -55px;
+		margin-top: -50px;
 
 		&.food-text-1 {
 			h1 {
@@ -317,18 +318,20 @@ body.fp-viewing-12 {
 
 	// sun
 	.sun {
-		position: absolute;
-		width: 1220px;
-		height: 1220px;
-		z-index: -1;
-		background: url(../img/sun.svg) no-repeat center 100px;
-		margin: auto;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
+		$sunWidth: 1220px;
 
-		transform: rotate(-50deg);
+
+		position: absolute;
+		width: $sunWidth;
+		height: $sunWidth;
+		z-index: -1;
+		background: url(../img/sun.svg) no-repeat center 10px;
+		top: 50%;
+		left: 50%;
+		margin-left: -($sunWidth/2);
+		margin-top: -180px;
+
+		transform: rotate(-40deg);
 
 		transition: transform $cloudEaseTime ease;
 
@@ -351,24 +354,23 @@ body.fp-viewing-12 {
 
 	// clouds
 	.cloud {
+		$sunWidth: 1220px;
+
+
 		position: absolute;
-		width: 1220px;
-		height: 1220px;
+		width: $sunWidth;
+		height: $sunWidth;
 		z-index: -1;
-		margin: 0 auto;
-		left: 0;
-		right: 0;
-		margin: auto;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
+		top: 50%;
+		left: 50%;
+		margin-left: -($sunWidth/2);
+		margin-top: -500px;
 
 
 
 
 		&.cloud-1 {
-			background: url(../img/cloud-1.svg) center 64px no-repeat;
+			background: url(../img/cloud-1.svg) center 75px no-repeat;
 			transform: rotate(-30deg);
 
 
@@ -378,17 +380,17 @@ body.fp-viewing-12 {
 				transform: rotate(-29deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(-28deg);
-			}
-			.fp-viewing-3 & {
 				transform: rotate(-26deg);
 			}
+			.fp-viewing-3 & {
+				transform: rotate(-23deg);
+			}
 			.fp-viewing-4 & {
-				transform: rotate(-25deg);
+				transform: rotate(-20deg);
 			}
 		}
 		&.cloud-2 {
-			background: url(../img/cloud-2.svg) center 20px no-repeat;
+			background: url(../img/cloud-2.svg) center 40px no-repeat;
 			transform: rotate(-45deg);
 
 
@@ -398,17 +400,17 @@ body.fp-viewing-12 {
 				transform: rotate(-44deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(-42deg);
+				transform: rotate(-40deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(-41deg);
+				transform: rotate(-36deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(-39deg);
+				transform: rotate(-30deg);
 			}
 		}
 		&.cloud-3 {
-			background: url(../img/cloud-3.svg) center 70px no-repeat;
+			background: url(../img/cloud-3.svg) center 100px no-repeat;
 			transform: rotate(-10deg);
 
 
@@ -418,17 +420,17 @@ body.fp-viewing-12 {
 				transform: rotate(-9deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(-8deg);
+				transform: rotate(0deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(-6deg);
+				transform: rotate(15deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(-5deg);
+				transform: rotate(20deg);
 			}
 		}
 		&.cloud-4 {
-			background: url(../img/cloud-4.svg) center -24px no-repeat;
+			background: url(../img/cloud-4.svg) center 55px no-repeat;
 			transform: rotate(-20deg);
 
 
@@ -438,17 +440,17 @@ body.fp-viewing-12 {
 				transform: rotate(-19deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(-18deg);
+				transform: rotate(-10deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(-17deg);
+				transform: rotate(5deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(-15deg);
+				transform: rotate(25deg);
 			}
 		}
 		&.cloud-5 {
-			background: url(../img/cloud-5.svg) center 40px no-repeat;
+			background: url(../img/cloud-5.svg) center 50px no-repeat;
 			transform: rotate(40deg);
 
 
@@ -458,17 +460,17 @@ body.fp-viewing-12 {
 				transform: rotate(41deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(43deg);
+				transform: rotate(50deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(44deg);
+				transform: rotate(62deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(45deg);
+				transform: rotate(70deg);
 			}
 		}
 		&.cloud-6 {
-			background: url(../img/cloud-6.svg) center 20px no-repeat;
+			background: url(../img/cloud-6.svg) center 70px no-repeat;
 			transform: rotate(10deg);
 
 
@@ -478,17 +480,17 @@ body.fp-viewing-12 {
 				transform: rotate(11deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(12deg);
+				transform: rotate(20deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(13deg);
+				transform: rotate(35deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(15deg);
+				transform: rotate(47deg);
 			}
 		}
 		&.cloud-7 {
-			background: url(../img/cloud-7.svg) center 60px no-repeat;
+			background: url(../img/cloud-7.svg) center 140px no-repeat;
 			transform: rotate(20deg);
 
 
@@ -565,7 +567,7 @@ body.fp-viewing-12 {
 
 
 
-.wish-block {
+.wish-box {
 	h3 {
 		font-weight: bold;
 		font-style: italic;
@@ -588,6 +590,9 @@ body.fp-viewing-12 {
 		.wish-content {
 			height: 320px;
 		}		
+	}
+	.wish-block	{
+		height: 570px;
 	}
 }
 
@@ -635,14 +640,14 @@ body.fp-viewing-12 {
 	.description {
 		font-size: 14px;
 		font-family: 'Helvetica Neue', Helvetica, Arial;
-
+		padding-right: 40px;
 	}
 }
 
 
 .bag-box {
 	.bag-img {
-		margin: 100px 0;
+		margin: 60px 0;
 	}
 
 	p {
@@ -650,6 +655,7 @@ body.fp-viewing-12 {
 		font-size: 14px;
 		position: relative;
 		margin-bottom: 25px;
+		margin: 0 80px 25px;
 
 		&:after {
 			content: '';
@@ -733,8 +739,8 @@ body.fp-viewing-12 {
 		background: url(../img/arrow-prev.png) center no-repeat;
 		text-indent: -9999px; 
 		position: absolute;
-		top: 50px;
-		left: 150px;
+		top: -90px;
+		left: -60px;
 
 	}
 	.owl-next {
@@ -744,8 +750,19 @@ body.fp-viewing-12 {
 		background: url(../img/arrow-next.png) center no-repeat;
 		text-indent: -9999px; 
 		position: absolute;
-		top: 50px;
-		right: 150px;
+		top: -90px;
+		right: -60px;
+	}
+	img {
+		max-width: 100%;
+	}
+	.container {
+		width: 970px;
+	}
+	.owl-buttons {
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
 	}
 }
 
@@ -760,17 +777,14 @@ body.fp-viewing-12 {
 		margin-bottom: 50px;
 	}
 	.row:last-child {
-		margin-top: 50px;
+		margin-top: 30px;
 	}
 
 	.about-text {
 		font-size: 18px;
 		font-style: italic;
 	}
-	.about-icon {
-		height: 150px;
-		margin-bottom: 30px;
-	}
+
 
 	.about-icon-1 {
 		background: url(../img/about-1.svg) center no-repeat;
@@ -796,6 +810,11 @@ body.fp-viewing-12 {
 	.about-icon-8 {
 		background: url(../img/about-8.svg) center no-repeat;
 	}
+	.about-icon {
+		height: 100px;
+		margin-bottom: 30px;
+		background-size: 70%;
+	}
 }
 
 
@@ -807,6 +826,10 @@ body.fp-viewing-12 {
 
 .ask-box {
 	background: url(../img/whore.png) left bottom no-repeat;
+
+	.link {
+		background: #ba502d;
+	}
 }
 
 
