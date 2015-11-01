@@ -5,48 +5,48 @@ $cloudEaseTime: 1s;
 
 
 @font-face {
-    font-family: 'Cooper';
-    src: url('../fonts/CooperLightCBT_2.eot');
-    src: url('../fonts/CooperLightCBT_2.eot') format('embedded-opentype'),
-         url('../fonts/CooperLightCBT_2.woff2') format('woff2'),
-         url('../fonts/CooperLightCBT_2.woff') format('woff'),
-         url('../fonts/CooperLightCBT_2.ttf') format('truetype'),
-         url('../fonts/CooperLightCBT_2.svg#CooperLightCBT_2') format('svg');
-         font-weight: normal;
-         font-style: normal;
+	font-family: 'Cooper';
+	src: url('../fonts/CooperLightCBT_2.eot');
+	src: url('../fonts/CooperLightCBT_2.eot') format('embedded-opentype'),
+	url('../fonts/CooperLightCBT_2.woff2') format('woff2'),
+	url('../fonts/CooperLightCBT_2.woff') format('woff'),
+	url('../fonts/CooperLightCBT_2.ttf') format('truetype'),
+	url('../fonts/CooperLightCBT_2.svg#CooperLightCBT_2') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-    font-family: 'Cooper';
-    src: url('../fonts/CooperLightCBTItalic_2.eot');
-    src: url('../fonts/CooperLightCBTItalic_2.eot') format('embedded-opentype'),
-         url('../fonts/CooperLightCBTItalic_2.woff2') format('woff2'),
-         url('../fonts/CooperLightCBTItalic_2.woff') format('woff'),
-         url('../fonts/CooperLightCBTItalic_2.ttf') format('truetype'),
-         url('../fonts/CooperLightCBTItalic_2.svg#CooperLightCBTItalic_2') format('svg');
-         font-style: italic;
-         font-weight: normal;
+	font-family: 'Cooper';
+	src: url('../fonts/CooperLightCBTItalic_2.eot');
+	src: url('../fonts/CooperLightCBTItalic_2.eot') format('embedded-opentype'),
+	url('../fonts/CooperLightCBTItalic_2.woff2') format('woff2'),
+	url('../fonts/CooperLightCBTItalic_2.woff') format('woff'),
+	url('../fonts/CooperLightCBTItalic_2.ttf') format('truetype'),
+	url('../fonts/CooperLightCBTItalic_2.svg#CooperLightCBTItalic_2') format('svg');
+	font-style: italic;
+	font-weight: normal;
 }
 @font-face {
-    font-family: 'Cooper';
-    src: url('../fonts/CooperLightCBTBold_2.eot');
-    src: url('../fonts/CooperLightCBTBold_2.eot') format('embedded-opentype'),
-         url('../fonts/CooperLightCBTBold_2.woff2') format('woff2'),
-         url('../fonts/CooperLightCBTBold_2.woff') format('woff'),
-         url('../fonts/CooperLightCBTBold_2.ttf') format('truetype'),
-         url('../fonts/CooperLightCBTBold_2.svg#CooperLightCBTBold_2') format('svg');
-         font-weight: bold;
-         font-style: normal;
+	font-family: 'Cooper';
+	src: url('../fonts/CooperLightCBTBold_2.eot');
+	src: url('../fonts/CooperLightCBTBold_2.eot') format('embedded-opentype'),
+	url('../fonts/CooperLightCBTBold_2.woff2') format('woff2'),
+	url('../fonts/CooperLightCBTBold_2.woff') format('woff'),
+	url('../fonts/CooperLightCBTBold_2.ttf') format('truetype'),
+	url('../fonts/CooperLightCBTBold_2.svg#CooperLightCBTBold_2') format('svg');
+	font-weight: bold;
+	font-style: normal;
 }
 @font-face {
-    font-family: 'Cooper';
-    src: url('../fonts/CooperLightCBTBoldItalic_2.eot');
-    src: url('../fonts/CooperLightCBTBoldItalic_2.eot') format('embedded-opentype'),
-         url('../fonts/CooperLightCBTBoldItalic_2.woff2') format('woff2'),
-         url('../fonts/CooperLightCBTBoldItalic_2.woff') format('woff'),
-         url('../fonts/CooperLightCBTBoldItalic_2.ttf') format('truetype'),
-         url('../fonts/CooperLightCBTBoldItalic_2.svg#CooperLightCBTBoldItalic_2') format('svg');
-         font-weight: bold;
-         font-style: italic;
+	font-family: 'Cooper';
+	src: url('../fonts/CooperLightCBTBoldItalic_2.eot');
+	src: url('../fonts/CooperLightCBTBoldItalic_2.eot') format('embedded-opentype'),
+	url('../fonts/CooperLightCBTBoldItalic_2.woff2') format('woff2'),
+	url('../fonts/CooperLightCBTBoldItalic_2.woff') format('woff'),
+	url('../fonts/CooperLightCBTBoldItalic_2.ttf') format('truetype'),
+	url('../fonts/CooperLightCBTBoldItalic_2.svg#CooperLightCBTBoldItalic_2') format('svg');
+	font-weight: bold;
+	font-style: italic;
 }
 
 
@@ -74,15 +74,33 @@ body {
 	width: 100%;
 	height: 100%;
 }
+.row-box {
+	display: table-row;
+}
 .cell-box {
 	display: table-cell;
 	vertical-align: middle;
+}
+.cell-top {
+	vertical-align: top;
+}
+.cell-bottom {
+	vertical-align: bottom;
+	padding-bottom: 100px;
+}
+.cell-header {
+	height: 25%;
+	vertical-align: bottom;
+	padding-bottom: 50px;
+}
+.cell-content {
+	height: 75%;
+	padding-bottom: 50px;
 }
 h2 {
 	font-weight: bold;
 	font-style: italic;
 	font-size: 38px;
-	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -96,6 +114,24 @@ h2 {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: 200;
 	z-index: 10;
+}
+
+// arrow down
+.arrow-down {
+	display: block;
+	width: 100px;
+	height: 60px;
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -50px;
+	background: url(../img/arrow.svg) no-repeat center;
+	z-index: 15;
+	opacity: .7;
+
+	.fp-viewing-12 & {
+		display: none;
+	}
 }
 
 // link
@@ -170,6 +206,10 @@ body.fp-viewing-12 {
 
 	transform: translateY(-100vh);
 
+	.logo-holder {
+		padding-top: 50px;
+	}
+
 	.fp-viewing-0 &, .fp-viewing-1 &, .fp-viewing-2 &, .fp-viewing-3 &, .fp-viewing-4 & {
 		transform: translateY(0);
 	}
@@ -182,7 +222,7 @@ body.fp-viewing-12 {
 		height: 130px;
 		position: relative;
 	}
-		
+
 
 	// food
 	.food {
@@ -203,8 +243,8 @@ body.fp-viewing-12 {
 		opacity: 0;
 
 		&.food-arrow-1 {
-			top: 105px;
-			left: 20px;
+			top: 145px;
+			left: 245px;
 
 			animation: arrow-1 $animationTime ease 0s infinite alternate;
 
@@ -214,7 +254,7 @@ body.fp-viewing-12 {
 		}
 		&.food-arrow-2 {
 			top: 50px;
-			left: 190px;
+			left: 420px;
 			transform: rotate(58deg);
 
 			animation: arrow-2 $animationTime ease 0s infinite alternate;
@@ -224,8 +264,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-3 {
-			top: 45px;
-			left: 290px;
+			top: 85px;
+			left: 570px;
 
 			animation: arrow-1 $animationTime ease 0s infinite alternate;
 
@@ -236,9 +276,9 @@ body.fp-viewing-12 {
 		&.food-arrow-4 {
 			top: 300px;
 			right: 100px;
-			 transform: rotate(138deg);
+			transform: rotate(138deg);
 
-			 animation: arrow-4 $animationTime ease 0s infinite alternate;
+			animation: arrow-4 $animationTime ease 0s infinite alternate;
 
 			.fp-viewing-3 & {
 				opacity: 1;
@@ -256,8 +296,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-6 {
-			top: 100px;
-			left: 190px;
+			top: 390px;
+			left: 250px;
 			transform: rotate(9deg);
 
 			animation: arrow-6 $animationTime ease 0s infinite alternate;
@@ -299,10 +339,12 @@ body.fp-viewing-12 {
 		}
 		.description {
 			font-size: 28px;
+			line-height: 30px;
 			color: #ffcc01;
 			font-style: italic;
 			font-weight: bold;
 			letter-spacing: 2px;
+			margin-bottom: 10px;
 		}
 		.about {
 			font-size: 18px;
@@ -325,7 +367,7 @@ body.fp-viewing-12 {
 		width: $sunWidth;
 		height: $sunWidth;
 		z-index: -1;
-		background: url(../img/sun.svg) no-repeat center 10px;
+		// background: url(../img/sun.svg) no-repeat center 10px;
 		top: 50%;
 		left: 50%;
 		margin-left: -($sunWidth/2);
@@ -334,6 +376,17 @@ body.fp-viewing-12 {
 		transform: rotate(-40deg);
 
 		transition: transform $cloudEaseTime ease;
+
+		.sun-icon {
+			position: absolute;
+			width: 70px;
+			height: 70px;
+			left: 50%;
+			top: 10px;
+			margin-left: -35px;
+			background: url(../img/sun.svg) no-repeat center;
+		}
+
 
 		.fp-viewing-1 & {
 			transform: rotate(-35deg);
@@ -371,86 +424,126 @@ body.fp-viewing-12 {
 
 		&.cloud-1 {
 			background: url(../img/cloud-1.svg) center 75px no-repeat;
-			transform: rotate(-30deg);
+			transform: rotate(-50deg);
 
 
 			transition: transform $cloudEaseTime ease;
 
 			.fp-viewing-1 & {
-				transform: rotate(-29deg);
+				transform: rotate(-49deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(-26deg);
+				transform: rotate(-47deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(-23deg);
+				transform: rotate(-46deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(-20deg);
+				transform: rotate(-45deg);
 			}
 		}
 		&.cloud-2 {
 			background: url(../img/cloud-2.svg) center 40px no-repeat;
-			transform: rotate(-45deg);
+			transform: rotate(-60deg);
 
 
 			transition: transform $cloudEaseTime ease;
 
 			.fp-viewing-1 & {
-				transform: rotate(-44deg);
+				transform: rotate(-58deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(-40deg);
+				transform: rotate(-57deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(-36deg);
+				transform: rotate(-55deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(-30deg);
+				transform: rotate(-54deg);
 			}
 		}
 		&.cloud-3 {
-			background: url(../img/cloud-3.svg) center 100px no-repeat;
-			transform: rotate(-10deg);
+			background: url(../img/cloud-3.svg) center 0 no-repeat;
+			transform: rotate(-40deg);
 
 
 			transition: transform $cloudEaseTime ease;
 
 			.fp-viewing-1 & {
-				transform: rotate(-9deg);
+				transform: rotate(-39deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(0deg);
+				transform: rotate(-38deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(15deg);
+				transform: rotate(-37deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(20deg);
+				transform: rotate(-35deg);
 			}
 		}
 		&.cloud-4 {
 			background: url(../img/cloud-4.svg) center 134px no-repeat;
-			transform: rotate(-20deg);
+			transform: rotate(-37deg);
 
 
 			transition: transform $cloudEaseTime ease;
 
 			.fp-viewing-1 & {
-				transform: rotate(-19deg);
+				transform: rotate(-36deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(-10deg);
+				transform: rotate(-35deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(5deg);
+				transform: rotate(-34deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(25deg);
+				transform: rotate(-33deg);
 			}
 		}
 		&.cloud-5 {
 			background: url(../img/cloud-5.svg) center 50px no-repeat;
+			transform: rotate(57deg);
+
+
+			transition: transform $cloudEaseTime ease;
+
+			.fp-viewing-1 & {
+				transform: rotate(58deg);
+			}
+			.fp-viewing-2 & {
+				transform: rotate(59deg);
+			}
+			.fp-viewing-3 & {
+				transform: rotate(60deg);
+			}
+			.fp-viewing-4 & {
+				transform: rotate(61deg);
+			}
+		}
+		&.cloud-6 {
+			background: url(../img/cloud-6.svg) center 104px no-repeat;
+			transform: rotate(45deg);
+
+
+			transition: transform $cloudEaseTime ease;
+
+			.fp-viewing-1 & {
+				transform: rotate(46deg);
+			}
+			.fp-viewing-2 & {
+				transform: rotate(48deg);
+			}
+			.fp-viewing-3 & {
+				transform: rotate(49deg);
+			}
+			.fp-viewing-4 & {
+				transform: rotate(50deg);
+			}
+		}
+		&.cloud-7 {
+			background: url(../img/cloud-7.svg) center 20px no-repeat;
 			transform: rotate(40deg);
 
 
@@ -460,53 +553,13 @@ body.fp-viewing-12 {
 				transform: rotate(41deg);
 			}
 			.fp-viewing-2 & {
-				transform: rotate(50deg);
+				transform: rotate(42deg);
 			}
 			.fp-viewing-3 & {
-				transform: rotate(62deg);
+				transform: rotate(43deg);
 			}
 			.fp-viewing-4 & {
-				transform: rotate(70deg);
-			}
-		}
-		&.cloud-6 {
-			background: url(../img/cloud-6.svg) center 104px no-repeat;
-			transform: rotate(10deg);
-
-
-			transition: transform $cloudEaseTime ease;
-
-			.fp-viewing-1 & {
-				transform: rotate(11deg);
-			}
-			.fp-viewing-2 & {
-				transform: rotate(20deg);
-			}
-			.fp-viewing-3 & {
-				transform: rotate(35deg);
-			}
-			.fp-viewing-4 & {
-				transform: rotate(47deg);
-			}
-		}
-		&.cloud-7 {
-			background: url(../img/cloud-7.svg) center 140px no-repeat;
-			transform: rotate(20deg);
-
-
-			transition: transform $cloudEaseTime ease;
-
-			.fp-viewing-1 & {
-				transform: rotate(21deg);
-			}
-			.fp-viewing-2 & {
-				transform: rotate(22deg);
-			}
-			.fp-viewing-3 & {
-				transform: rotate(24deg);
-			}
-			.fp-viewing-4 & {
-				transform: rotate(26deg);
+				transform: rotate(44deg);
 			}
 		}
 	}
@@ -521,44 +574,44 @@ body.fp-viewing-12 {
 
 
 @keyframes arrow-1 {
-    0% {
+	0% {
 		transform: translateY(10px);
-    }
-    100% {
+	}
+	100% {
 		transform: translateY(0);
-    }
+	}
 }
 @keyframes arrow-2 {
-    0% {
+	0% {
 		transform: translate(10px, -10px) rotate(58deg);
-    }
-    100% {
+	}
+	100% {
 		transform: translate(0) rotate(58deg);
-    }
+	}
 }
 @keyframes arrow-4 {
-    0% {
+	0% {
 		transform: translate(10px, 10px) rotate(138deg);
-    }
-    100% {
+	}
+	100% {
 		transform: translate(0) rotate(138deg);
-    }
+	}
 }
 @keyframes arrow-5 {
-    0% {
+	0% {
 		transform: translate(-10px, 5px) rotate(-117deg);
-    }
-    100% {
+	}
+	100% {
 		transform: translate(0) rotate(-117deg);
-    }
+	}
 }
 @keyframes arrow-6 {
-    0% {
+	0% {
 		transform: translate(-2px, 10px) rotate(9deg);
-    }
-    100% {
+	}
+	100% {
 		transform: translate(0) rotate(9deg);
-    }
+	}
 }
 
 
@@ -589,10 +642,40 @@ body.fp-viewing-12 {
 	.col-xs-3:hover {
 		.wish-content {
 			height: 320px;
-		}		
+		}
+		&.wish-icon-1 {
+			background: url(../img/wish-1.svg) center no-repeat;
+		}
+		&.wish-icon-2 {
+			background: url(../img/wish-2.svg) center no-repeat;
+		}
+		&.wish-icon-3 {
+			background: url(../img/wish-3.svg) center no-repeat;
+		}
+		&.wish-icon-4 {
+			background: url(../img/wish-4.svg) center no-repeat;
+		}
 	}
 	.wish-block	{
 		height: 570px;
+	}
+	.wish-icon {
+		width: 160px;
+		height: 160px;
+		margin: 0 auto;
+
+		&.wish-icon-1 {
+			background: url(../img/wish-1.svg) center no-repeat;
+		}
+		&.wish-icon-2 {
+			background: url(../img/wish-2.svg) center no-repeat;
+		}
+		&.wish-icon-3 {
+			background: url(../img/wish-3.svg) center no-repeat;
+		}
+		&.wish-icon-4 {
+			background: url(../img/wish-4.svg) center no-repeat;
+		}
 	}
 }
 
@@ -623,12 +706,13 @@ body.fp-viewing-12 {
 		font-weight: bold;
 		font-style: italic;
 		font-size: 21px;
+		margin-top: 30px;
 
 		&:after {
 			content: '';
 			display: block;
 			width: 40px;
-			height: 1px;
+			height: 2px;
 			background: #fff;
 			margin: 20px 0;
 		}
@@ -639,8 +723,36 @@ body.fp-viewing-12 {
 	}
 	.description {
 		font-size: 14px;
+		line-height: 22px;
 		font-family: 'Helvetica Neue', Helvetica, Arial;
 		padding-right: 40px;
+	}
+
+	.team-photo {
+		position: relative;
+		z-index: 2;
+	}
+
+	.team-icon {
+		position: relative;
+		transform: translateX(-90px) translateY(0);
+		// z-index: -1;
+
+		transition: transform $easeTime ease;
+
+		&.team-icon-1 {
+			transition-delay: .3s;
+		}
+		&.team-icon-2 {
+			transition-delay: .45s;
+		}
+		&.team-icon-3 {
+			transition-delay: .6s;
+		}
+
+		.fp-viewing-6 & {
+			transform: translateX(0) translateY(-90px);
+		}
 	}
 }
 
@@ -711,6 +823,10 @@ body.fp-viewing-12 {
 
 
 .testimonials-box {
+	padding-bottom: 100px;
+	.carrot-holder {
+		padding-bottom: 100px;
+	}
 	h3 {
 		font-weight: bold;
 		font-style: italic;
@@ -732,26 +848,30 @@ body.fp-viewing-12 {
 	.testimonials-content {
 		font-family: 'Helvetica Neue', Helvetica, Arial;
 	}
+
+	$buttonHeight: 35px;
+	$buttonGutter: 7%;
+
 	.owl-prev {
 		display: block;
-		width: 35px;
-		height: 35px;
+		width: $buttonHeight;
+		height: $buttonHeight;
 		background: url(../img/arrow-prev.png) center no-repeat;
 		text-indent: -9999px; 
 		position: absolute;
-		top: -90px;
-		left: -60px;
+		top: 0;
+		left: $buttonGutter;
 
 	}
 	.owl-next {
 		display: block;
-		width: 35px;
-		height: 35px;
+		width: $buttonHeight;
+		height: $buttonHeight;
 		background: url(../img/arrow-next.png) center no-repeat;
 		text-indent: -9999px; 
 		position: absolute;
-		top: -90px;
-		right: -60px;
+		top: 0;
+		right: $buttonGutter;
 	}
 	img {
 		max-width: 100%;
@@ -760,9 +880,12 @@ body.fp-viewing-12 {
 		width: 970px;
 	}
 	.owl-buttons {
-		width: 960px;
-		margin: 0 auto;
-		position: relative;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin-top: -$buttonHeight;
+		width: 100%;
+		height: $buttonHeight;
 	}
 }
 
@@ -825,7 +948,7 @@ body.fp-viewing-12 {
 
 
 .ask-box {
-	background: url(../img/whore.png) left bottom no-repeat;
+	background: url(../img/whore.png) left 0 bottom -20px no-repeat;
 
 	.link {
 		background: #ba502d;
@@ -849,13 +972,13 @@ form {
 	}
 	input.form-control {
 		height: 65px;
-
+		padding: 0 30px;
 	}
 	textarea.form-control {
 		min-height: 140px;
 		max-height: 140px;
 		max-width: 100%;
-		padding-top: 10px;
+		padding: 20px 30px;
 	}
 	p {
 		font-family: 'Helvetica Neue', Helvetica, Arial;
@@ -901,4 +1024,33 @@ form {
 	.link {
 		background: #207b34;
 	}
+}
+
+
+
+
+
+@-webkit-keyframes rotating {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.rotating {
+	-webkit-animation: rotating 15s linear infinite;
+	animation: rotating 15s linear infinite;
 }

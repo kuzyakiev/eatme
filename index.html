@@ -22,6 +22,8 @@
 		098 234 55 66
 	</div>
 
+	<a href="#" class="arrow-down"></a>
+
 	<div class="start-screen text-center">
 		<div class="cloud cloud-1"></div>
 		<div class="cloud cloud-2"></div>
@@ -30,52 +32,66 @@
 		<div class="cloud cloud-5"></div>
 		<div class="cloud cloud-6"></div>
 		<div class="cloud cloud-7"></div>
-		<div class="sun"></div>	
+		<div class="sun">
+			<div class="sun-icon rotating"></div>
+		</div>	
 		<div class="table-box">
-			<div class="cell-box">
-				<div class="logo-holder">
-					<img width="190" src="img/logo.svg" alt="">
-				</div>
-				<div class="intro-text">
+			<div class="row-box">
+				<div class="cell-box cell-top">
+					<div class="logo-holder">
+						<img width="190" src="img/logo.svg" alt="">
+					</div>
+					<div class="intro-text">
 
-					<div class="food-text-1 food-text">
-						<h1>вкусная и полезная еда</h1>
-						<p>Доставим вам с 5:00 до 11:00 рацион еды на весь день</p>
-					</div>
-					<div class="food-text-2 food-text">
-						<div class="time">завтрак</div>
-						<div class="description">яйцо пашот с куриной грудкой</div>
-						<div class="about">диетический белок, микроэлементы, сытный завтрак, который даст тебе энергию для начала дня!</div>
-					</div>
-					<div class="food-text-3 food-text">
-						<div class="time">завтрак</div>
-						<div class="description">фруктовый смузи</div>
-						<div class="about">это ну оооочень вкусно!</div>
-					</div>
-					<div class="food-text-4 food-text">
-						<div class="time">обед</div>
-						<div class="description">стейк из телятины с овощами и яичный суп с имбирем </div>
-						<div class="about">легкий и нежный суп полезен для пищеварения!</div>
-					</div>
-					<div class="food-text-5 food-text">
-						<div class="time">ужин</div>
-						<div class="description">Рататуй со стейком из лосося.</div>
-						<div class="about">Рататауй со стейком из лосося</div>
-					</div>
+						<div class="food-text-1 food-text">
+							<h1>вкусная и полезная еда</h1>
+							<p>Доставим вам с 5:00 до 11:00 рацион еды на весь день</p>
+						</div>
+						<div class="food-text-2 food-text">
+							<div class="time">завтрак</div>
+							<div class="description">яйцо пашот с куриной грудкой</div>
+							<div class="about">диетический белок, микроэлементы, сытный завтрак, который <br> даст тебе энергию для начала дня!</div>
+						</div>
+						<div class="food-text-3 food-text">
+							<div class="time">завтрак</div>
+							<div class="description">фруктовый смузи</div>
+							<div class="about">это ну оооочень вкусно!</div>
+						</div>
+						<div class="food-text-4 food-text">
+							<div class="time">обед</div>
+							<div class="description">стейк из телятины с овощами и <br> яичный суп с имбирем </div>
+							<div class="about">легкий и нежный суп полезен для пищеварения!</div>
+						</div>
+						<div class="food-text-5 food-text">
+							<div class="time">ужин</div>
+							<div class="description">Рататуй со стейком из лосося.</div>
+							<div class="about">Рататауй со стейком из лосося</div>
+						</div>
 
+					</div>
 				</div>
-				<div class="food">
-					<img src="img/food.png" height="350px" alt="">
-					<div class="food-arrow food-arrow-1"></div>
-					<div class="food-arrow food-arrow-2"></div>
-					<div class="food-arrow food-arrow-3"></div>
-					<div class="food-arrow food-arrow-4"></div>
-					<div class="food-arrow food-arrow-5"></div>
-					<div class="food-arrow food-arrow-6"></div>
+			</div>
+			<div class="row-box">
+				<div class="cell-box">
+					
+					<div class="food">
+						<img src="img/food.png" alt="">
+						<div class="food-arrow food-arrow-1"></div>
+						<div class="food-arrow food-arrow-2"></div>
+						<div class="food-arrow food-arrow-3"></div>
+						<div class="food-arrow food-arrow-4"></div>
+						<div class="food-arrow food-arrow-5"></div>
+						<div class="food-arrow food-arrow-6"></div>
+					</div>
+					
+					
 				</div>
-				
-				<div class="text-center">
-					<a href="" data-toggle="modal" data-target="#myModal_2" class="link">Попробовать!</a>
+			</div>
+			<div class="row-box">
+				<div class="cell-box cell-bottom">
+					<div class="text-center">
+						<a href="" data-toggle="modal" data-target="#myModal_2" class="link">Попробовать!</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -89,61 +105,67 @@
 		<div class="section section-5"></div>
 		<div class="section section-6">
 			<div class="table-box text-center">
-				<div class="cell-box">
-					<div class="container wish-box">
+				<div class="row-box">
+					<div class="cell-box cell-top cell-header">
 						<h2>Чего ты хочешь?</h2>
-						<div class="row">
-							<div class="col-xs-3">
-								<div class="wish-block">
-									<div class="table-box">
-										<div class="cell-box">
-											<img src="img/wish-1.svg" alt="">
-											<h3>хочу стать стройнее</h3>
-											<div class="wish-content">
-												<p class="wish-text">Для здорового снижения веса не достаточно просто тратить много энергии и мало есть. Очень важно еще и правильно питаться, получать все необходимые организму вещества, даже при низкокалорийной диете. Кстати, диета - это совсем не сложно, с eatme это вкусно и очень удобно.</p>
-												<a href="" data-toggle="modal" data-target="#myModal" class="link">Хочу!</a>	
-											</div>		
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-3">
-								<div class="wish-block">
-									<div class="table-box">
-										<div class="cell-box">
-											<img src="img/wish-2.svg" alt="">
-											<h3> нарастить мышечную массу</h3>
-											<div class="wish-content">
-												<p class="wish-text">Для здорового снижения веса не достаточно просто тратить много энергии и мало есть. Очень важно еще и правильно питаться, получать все необходимые организму вещества, даже при низкокалорийной диете. Кстати, диета - это совсем не сложно, с eatme это вкусно и очень удобно.</p>
-												<a href="" data-toggle="modal" data-target="#myModal" class="link">Хочу!</a>	
+					</div>
+				</div>
+				<div class="row-box">
+					<div class="cell-box cell-content">
+						<div class="container wish-box">
+							<div class="row">
+								<div class="col-xs-3">
+									<div class="wish-block">
+										<div class="table-box">
+											<div class="cell-box">
+												<div class="wish-icon wish-icon-1"></div>
+												<h3>хочу стать стройнее</h3>
+												<div class="wish-content">
+													<p class="wish-text">Для здорового снижения веса не достаточно просто тратить много энергии и мало есть. Очень важно еще и правильно питаться, получать все необходимые организму вещества, даже при низкокалорийной диете. Кстати, диета - это совсем не сложно, с eatme это вкусно и очень удобно.</p>
+													<a href="" data-toggle="modal" data-target="#myModal" class="link">Хочу!</a>	
+												</div>		
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-xs-3">
-								<div class="wish-block">
-									<div class="table-box">
-										<div class="cell-box">
-											<img src="img/wish-3.svg" alt="">
-											<h3>здорового и удобного питания</h3>
-											<div class="wish-content">
-												<p class="wish-text">Для здорового снижения веса не достаточно просто тратить много энергии и мало есть. Очень важно еще и правильно питаться, получать все необходимые организму вещества, даже при низкокалорийной диете. Кстати, диета - это совсем не сложно, с eatme это вкусно и очень удобно.</p>
-												<a href="" data-toggle="modal" data-target="#myModal" class="link">Хочу!</a>	
+								<div class="col-xs-3">
+									<div class="wish-block">
+										<div class="table-box">
+											<div class="cell-box">
+												<div class="wish-icon wish-icon-2"></div>
+												<h3> нарастить мышечную массу</h3>
+												<div class="wish-content">
+													<p class="wish-text">Для здорового снижения веса не достаточно просто тратить много энергии и мало есть. Очень важно еще и правильно питаться, получать все необходимые организму вещества, даже при низкокалорийной диете. Кстати, диета - это совсем не сложно, с eatme это вкусно и очень удобно.</p>
+													<a href="" data-toggle="modal" data-target="#myModal" class="link">Хочу!</a>	
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-xs-3">
-								<div class="wish-block">
-									<div class="table-box">
-										<div class="cell-box">
-											<img src="img/wish-4.svg" alt="">
-											<h3>вкусную вегетарианскую пишу</h3>
-											<div class="wish-content">
-												<p class="wish-text">Для здорового снижения веса не достаточно просто тратить много энергии и мало есть. Очень важно еще и правильно питаться, получать все необходимые организму вещества, даже при низкокалорийной диете. Кстати, диета - это совсем не сложно, с eatme это вкусно и очень удобно.</p>
-												<a href="" data-toggle="modal" data-target="#myModal" class="link">Хочу!</a>
+								<div class="col-xs-3">
+									<div class="wish-block">
+										<div class="table-box">
+											<div class="cell-box">
+												<div class="wish-icon wish-icon-3"></div>
+												<h3>здорового и удобного питания</h3>
+												<div class="wish-content">
+													<p class="wish-text">Для здорового снижения веса не достаточно просто тратить много энергии и мало есть. Очень важно еще и правильно питаться, получать все необходимые организму вещества, даже при низкокалорийной диете. Кстати, диета - это совсем не сложно, с eatme это вкусно и очень удобно.</p>
+													<a href="" data-toggle="modal" data-target="#myModal" class="link">Хочу!</a>	
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-3">
+									<div class="wish-block">
+										<div class="table-box">
+											<div class="cell-box">
+												<div class="wish-icon wish-icon-4"></div>
+												<h3>вкусную вегетарианскую пишу</h3>
+												<div class="wish-content">
+													<p class="wish-text">Для здорового снижения веса не достаточно просто тратить много энергии и мало есть. Очень важно еще и правильно питаться, получать все необходимые организму вещества, даже при низкокалорийной диете. Кстати, диета - это совсем не сложно, с eatme это вкусно и очень удобно.</p>
+													<a href="" data-toggle="modal" data-target="#myModal" class="link">Хочу!</a>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -156,27 +178,36 @@
 		</div>
 		<div class="section section-7">
 			<div class="table-box">
-				<div class="cell-box">
-					<div class="container team-box">
+				<div class="row-box">
+					<div class="cell-box cell-header">
 						<h2>Команда</h2>
-						<div class="row">
-							<div class="col-xs-4">
-								<img src="img/team-1.png" alt="">
-								<h3>Надежда Николаевна</h3>
-								<p class="team-role">заслуженный диеготол <br> и гастроэнтеролог </p>
-								<p class="description">Еда задает дневной ритм и дает нам энергию. Дневной рацион Eat Me поможет улучшить Ваше самочувствие и оставаться в форме. Сбалансированное и вкусное питание помогут хорошо выглядеть и вести правильный образ жизни.</p>
-							</div>
-							<div class="col-xs-4">
-								<img src="img/team-2.png" alt="">
-								<h3>Повар</h3>
-								<p class="team-role">Повар</p>
-								<p class="description">Еда задает дневной ритм и дает нам энергию. Дневной рацион Eat Me поможет улучшить Ваше самочувствие и оставаться в форме. Сбалансированное и вкусное питание помогут хорошо выглядеть и вести правильный образ жизни.</p>
-							</div>
-							<div class="col-xs-4">
-								<img src="img/team-3.png" alt="">
-								<h3>Курьер</h3>
-								<p class="team-role">доставляет счастье</p>
-								<p class="description">Еда задает дневной ритм и дает нам энергию. Дневной рацион Eat Me поможет улучшить Ваше самочувствие и оставаться в форме. Сбалансированное и вкусное питание помогут хорошо выглядеть и вести правильный образ жизни.</p>
+					</div>
+				</div>
+				<div class="row-box">
+					<div class="cell-box cell-content">
+						<div class="container team-box">
+							<div class="row">
+								<div class="col-xs-4">
+									<img class="team-photo" src="img/team-1.png" alt="">
+									<img src="img/team-icon-1.svg" alt="" class="team-icon team-icon-1">
+									<h3>Надежда Николаевна</h3>
+									<p class="team-role">Заслуженный диеготолог <br> и гастроэнтеролог </p>
+									<p class="description">Еда задает дневной ритм и дает нам энергию. Дневной рацион Eat Me поможет улучшить Ваше самочувствие и оставаться в форме. Сбалансированное и вкусное питание помогут хорошо выглядеть и вести правильный образ жизни.</p>
+								</div>
+								<div class="col-xs-4">
+									<img class="team-photo" src="img/team-2.png" alt="">
+									<img src="img/team-icon-2.svg" alt="" class="team-icon team-icon-2">
+									<h3>Повар</h3>
+									<p class="team-role">Повар</p>
+									<p class="description">Еда задает дневной ритм и дает нам энергию. Дневной рацион Eat Me поможет улучшить Ваше самочувствие и оставаться в форме. Сбалансированное и вкусное питание помогут хорошо выглядеть и вести правильный образ жизни.</p>
+								</div>
+								<div class="col-xs-4">
+									<img class="team-photo" src="img/team-3.png" alt="">
+									<img src="img/team-icon-3.svg" alt="" class="team-icon team-icon-3">
+									<h3>Курьер</h3>
+									<p class="team-role">Доставляет счастье</p>
+									<p class="description">Еда задает дневной ритм и дает нам энергию. Дневной рацион Eat Me поможет улучшить Ваше самочувствие и оставаться в форме. Сбалансированное и вкусное питание помогут хорошо выглядеть и вести правильный образ жизни.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -185,87 +216,94 @@
 		</div>
 		<div class="section section-8">
 			<div class="table-box">
-				<div class="cell-box">
-					<div class="container ration-block">
-						<h2 style="margin-bottom: 50px;">Рационы питания</h2>
-						<div class="row" style="margin-bottom: 50px;">
-							<div class="col-xs-4">
-								<div class="row">
-									<div class="col-xs-5">
-										<img src="img/ration-1.svg" alt="">
+				<div class="row-box">
+					<div class="cell-box cell-header">
+						<h2>Рационы питания</h2>
+					</div>
+				</div>
+				<div class="row-box">
+					<div class="cell-box cell-content">
+						<div class="container ration-block">
+							<div class="row" style="margin-bottom: 50px;">
+								<div class="col-xs-4">
+									<div class="row">
+										<div class="col-xs-5">
+											<img src="img/ration-1.svg" alt="">
+										</div>
+										<div class="col-xs-7">
+											<h3>Go Perfect</h3>
+											<p class="for">вперед к стройной фигуре</p>
+											<p class="gender">Man / Woman</p>
+										</div>
 									</div>
-									<div class="col-xs-7">
-										<h3>Go Perfect</h3>
-										<p class="for">вперед к стройной фигуре</p>
-										<p class="gender">Man / Woman</p>
+								</div>
+								<div class="col-xs-4">
+									<div class="row">
+										<div class="col-xs-5">
+											<img src="img/ration-2.svg" alt="">
+										</div>
+										<div class="col-xs-7">
+											<h3>Go Strong</h3>
+											<p class="for">Спортивная форма</p>
+											<p class="gender">Man / Woman</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-4">
+									<div class="row">
+										<div class="col-xs-5">
+											<img src="img/ration-3.svg" alt="">
+										</div>
+										<div class="col-xs-7">
+											<h3>Keep going</h3>
+											<p class="for">Здоровый организм</p>
+											<p class="gender">Man / Woman</p>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-4">
-								<div class="row">
-									<div class="col-xs-5">
-										<img src="img/ration-2.svg" alt="">
-									</div>
-									<div class="col-xs-7">
-										<h3>Go Strong</h3>
-										<p class="for">Спортивная форма</p>
-										<p class="gender">Man / Woman</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-4">
-								<div class="row">
-									<div class="col-xs-5">
-										<img src="img/ration-3.svg" alt="">
-									</div>
-									<div class="col-xs-7">
-										<h3>Keep going</h3>
-										<p class="for">Здоровый организм</p>
-										<p class="gender">Man / Woman</p>
+							<div class="row">
+								<div class="col-xs-4">
+									<div class="row">
+										<div class="col-xs-5">
+											<img src="img/ration-4.svg" alt="">
+										</div>
+										<div class="col-xs-7">
+											<h3>Go vegan</h3>
+											<p class="for">Сбалансированное вегетарианство</p>
+											<p class="gender">Man / Woman</p>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-4">
-								<div class="row">
-									<div class="col-xs-5">
-										<img src="img/ration-4.svg" alt="">
-									</div>
-									<div class="col-xs-7">
-										<h3>Go vegan</h3>
-										<p class="for">Сбалансированное вегетарианство</p>
-										<p class="gender">Man / Woman</p>
+								<div class="col-xs-4">
+									<div class="row">
+										<div class="col-xs-5">
+											<img src="img/ration-5.svg" alt="">
+										</div>
+										<div class="col-xs-7">
+											<h3>Go Pregnant moms</h3>
+											<p class="for">Будущие мамы</p>
+											<p class="gender">Woman</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-xs-4">
-								<div class="row">
-									<div class="col-xs-5">
-										<img src="img/ration-5.svg" alt="">
-									</div>
-									<div class="col-xs-7">
-										<h3>Go Pregnant moms</h3>
-										<p class="for">Будущие мамы</p>
-										<p class="gender">Woman</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-4">
-								<div class="row">
-									<div class="col-xs-5">
-										<img src="img/ration-6.svg" alt="">
-									</div>
-									<div class="col-xs-7">
-										<h3>Go nursing moms</h3>
-										<p class="for">Мама и ребенок</p>
-										<p class="gender">Woman</p>
+								<div class="col-xs-4">
+									<div class="row">
+										<div class="col-xs-5">
+											<img src="img/ration-6.svg" alt="">
+										</div>
+										<div class="col-xs-7">
+											<h3>Go nursing moms</h3>
+											<p class="for">Мама и ребенок</p>
+											<p class="gender">Woman</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 		<div class="section section-9">
@@ -298,151 +336,175 @@
 		</div>
 		<div class="section section-10">
 			<div class="table-box">
-				<div class="cell-box">
-					<div class="container delivery-box">
+				<div class="row-box">
+					<div class="cell-box cell-header">
 						<h2>Как мы доставляем счастье?</h2>
-						<div class="row">
-							<div class="col-xs-3">
-								<div class="delivery-icon delivery-icon-1"></div>
-								<h3>Выберите программу</h3>
-								<p>Шеф-повар кждый день готовит диетический рацион из 5 блюд и напитков</p>
+					</div>
+				</div>
+				<div class="row-box">
+					<div class="cell-box cell-content">
+						<div class="container delivery-box">
+							<div class="row">
+								<div class="col-xs-3">
+									<div class="delivery-icon delivery-icon-1"></div>
+									<h3>Выберите программу</h3>
+									<p>Шеф-повар кждый день готовит диетический рацион из 5 блюд и напитков</p>
+								</div>
+								<div class="col-xs-3">
+									<div class="delivery-icon delivery-icon-2"></div>
+									<h3>Выберите программу</h3>
+									<p>Шеф-повар кждый день готовит диетический рацион из 5 блюд и напитков</p>
+								</div>
+								<div class="col-xs-3">
+									<div class="delivery-icon delivery-icon-3"></div>
+									<h3>Выберите программу</h3>
+									<p>Шеф-повар кждый день готовит диетический рацион из 5 блюд и напитков</p>
+								</div>
+								<div class="col-xs-3">
+									<div class="delivery-icon delivery-icon-4"></div>
+									<h3>Выберите программу</h3>
+									<p>Шеф-повар кждый день готовит диетический рацион из 5 блюд и напитков</p>
+								</div>
 							</div>
-							<div class="col-xs-3">
-								<div class="delivery-icon delivery-icon-2"></div>
-								<h3>Выберите программу</h3>
-								<p>Шеф-повар кждый день готовит диетический рацион из 5 блюд и напитков</p>
+							<div class="text-center">
+								<a href="" class="link">Получить счастье</a>
 							</div>
-							<div class="col-xs-3">
-								<div class="delivery-icon delivery-icon-3"></div>
-								<h3>Выберите программу</h3>
-								<p>Шеф-повар кждый день готовит диетический рацион из 5 блюд и напитков</p>
-							</div>
-							<div class="col-xs-3">
-								<div class="delivery-icon delivery-icon-4"></div>
-								<h3>Выберите программу</h3>
-								<p>Шеф-повар кждый день готовит диетический рацион из 5 блюд и напитков</p>
-							</div>
-						</div>
-						<div class="text-center">
-							<a href="" class="link">Получить счастье</a>
 						</div>
 					</div>
-					
 				</div>
+				
 			</div>
 		</div>
 		<div class="section section-11">
 			<div class="table-box">
-				<div class="cell-box">
-					<div class="testimonials-box">
+				<div class="row-box">
+					<div class="cell-box cell-header">
 						<h2>О нас говорят</h2>
-						<div class="slider-wrapper">
-							<div id="owl-demo" class="owl-carousel owl-theme">
-								<div class="item">
-									<div class="container">
-										<div class="row">
-											<div class="col-xs-2">
-												<img src="img/testimonials-1.png" alt="">
-											</div>
-											<div class="col-xs-3">
-												<h3>Брюс Уиллис</h3>
-												<p class="profession">актер</p>
-												<p class="age">32 года</p>
-											</div>
-											<div class="col-xs-7">
-												<p class="testimonials-content">Еда штука хитрая. Есть нужно не только хотеть но и уметь, а представьте себе - большинство людей вовсе есть не умеют. Нужно не только знать что съесть, но и когда и как. И что при этом говорить. Доверьтесь этому сайту. Вы не ошибетесь ни с одним блюдом, а если нерешительность овладеет Вами при виде разнообразного меню, Вам помогут, не сомневайтесь. Уют, тепло и вкусная еда Вам обеспечены. Поверьте избалованному актерешке.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="container">
-										<div class="row">
-											<div class="col-xs-2">
-												<img src="img/testimonials-1.png" alt="">
-											</div>
-											<div class="col-xs-3">
-												<h3>Брюс Уиллис</h3>
-												<p class="profession">актер</p>
-												<p class="age">32 года</p>
-											</div>
-											<div class="col-xs-7">
-												<p class="testimonials-content">Еда штука хитрая. Есть нужно не только хотеть но и уметь, а представьте себе - большинство людей вовсе есть не умеют. Нужно не только знать что съесть, но и когда и как. И что при этом говорить. Доверьтесь этому сайту. Вы не ошибетесь ни с одним блюдом, а если нерешительность овладеет Вами при виде разнообразного меню, Вам помогут, не сомневайтесь. Уют, тепло и вкусная еда Вам обеспечены. Поверьте избалованному актерешке.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="container">
-										<div class="row">
-											<div class="col-xs-2">
-												<img src="img/testimonials-1.png" alt="">
-											</div>
-											<div class="col-xs-3">
-												<h3>Брюс Уиллис</h3>
-												<p class="profession">актер</p>
-												<p class="age">32 года</p>
-											</div>
-											<div class="col-xs-7">
-												<p class="testimonials-content">Еда штука хитрая. Есть нужно не только хотеть но и уметь, а представьте себе - большинство людей вовсе есть не умеют. Нужно не только знать что съесть, но и когда и как. И что при этом говорить. Доверьтесь этому сайту. Вы не ошибетесь ни с одним блюдом, а если нерешительность овладеет Вами при виде разнообразного меню, Вам помогут, не сомневайтесь. Уют, тепло и вкусная еда Вам обеспечены. Поверьте избалованному актерешке.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
+					</div>
+				</div>
+				<div class="row-box">
+					<div class="cell-box cell-content">
+						<div class="testimonials-box">
+							<div class="text-center carrot-holder">
+								<img src="img/carrot.svg" alt="">
 							</div>
-						</div>
-						<div class="text-center">
-							<a class="link" href="#">Получить счастье</a>
+							<div class="slider-wrapper">
+								<div id="owl-demo" class="owl-carousel owl-theme">
+									<div class="item">
+										<div class="container">
+											<div class="row">
+												<div class="col-xs-2">
+													<img src="img/testimonials-1.png" alt="">
+												</div>
+												<div class="col-xs-3">
+													<h3>Брюс Уиллис</h3>
+													<p class="profession">актер</p>
+													<p class="age">32 года</p>
+												</div>
+												<div class="col-xs-7">
+													<p class="testimonials-content">Еда штука хитрая. Есть нужно не только хотеть но и уметь, а представьте себе - большинство людей вовсе есть не умеют. Нужно не только знать что съесть, но и когда и как. И что при этом говорить. Доверьтесь этому сайту. Вы не ошибетесь ни с одним блюдом, а если нерешительность овладеет Вами при виде разнообразного меню, Вам помогут, не сомневайтесь. Уют, тепло и вкусная еда Вам обеспечены. Поверьте избалованному актерешке.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="container">
+											<div class="row">
+												<div class="col-xs-2">
+													<img src="img/testimonials-1.png" alt="">
+												</div>
+												<div class="col-xs-3">
+													<h3>Брюс Уиллис</h3>
+													<p class="profession">актер</p>
+													<p class="age">32 года</p>
+												</div>
+												<div class="col-xs-7">
+													<p class="testimonials-content">Еда штука хитрая. Есть нужно не только хотеть но и уметь, а представьте себе - большинство людей вовсе есть не умеют. Нужно не только знать что съесть, но и когда и как. И что при этом говорить. Доверьтесь этому сайту. Вы не ошибетесь ни с одним блюдом, а если нерешительность овладеет Вами при виде разнообразного меню, Вам помогут, не сомневайтесь. Уют, тепло и вкусная еда Вам обеспечены. Поверьте избалованному актерешке.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="container">
+											<div class="row">
+												<div class="col-xs-2">
+													<img src="img/testimonials-1.png" alt="">
+												</div>
+												<div class="col-xs-3">
+													<h3>Брюс Уиллис</h3>
+													<p class="profession">актер</p>
+													<p class="age">32 года</p>
+												</div>
+												<div class="col-xs-7">
+													<p class="testimonials-content">Еда штука хитрая. Есть нужно не только хотеть но и уметь, а представьте себе - большинство людей вовсе есть не умеют. Нужно не только знать что съесть, но и когда и как. И что при этом говорить. Доверьтесь этому сайту. Вы не ошибетесь ни с одним блюдом, а если нерешительность овладеет Вами при виде разнообразного меню, Вам помогут, не сомневайтесь. Уют, тепло и вкусная еда Вам обеспечены. Поверьте избалованному актерешке.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<div class="text-center">
+								<a class="link" href="#">Получить счастье</a>
+							</div>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 		<div class="section section-12">
 			<div class="table-box">
-				<div class="cell-box">
-					<div class="container about-box">
+				<div class="row-box">
+					<div class="cell-box cell-header">
 						<h2>О нашем сервисе</h2>
-						<div class="row">
-							<div class="col-xs-3">
-								<div class="about-icon about-icon-1">
+					</div>
+				</div>
+				<div class="row-box">
+					<div class="cell-box cell-content">
+						<div class="container about-box">
+
+							<div class="row">
+								<div class="col-xs-3">
+									<div class="about-icon about-icon-1">
+									</div>
+									<p class="about-text">Продуманный рацион разнообразное меню</p>
 								</div>
-								<p class="about-text">Продуманный рацион разнообразное меню</p>
+								<div class="col-xs-3">
+									<div class="about-icon about-icon-2"></div>
+									<p class="about-text">Без химических добавок и консервантов</p>
+								</div>
+								<div class="col-xs-3">
+									<div class="about-icon about-icon-3"></div>
+									<p class="about-text">Собственная кухня в Киеве</p>
+								</div>
+								<div class="col-xs-3">
+									<div class="about-icon about-icon-4"></div>
+									<p class="about-text">Доставка в удобное место и время</p>
+								</div>
 							</div>
-							<div class="col-xs-3">
-								<div class="about-icon about-icon-2"></div>
-								<p class="about-text">Без химических добавок и консервантов</p>
-							</div>
-							<div class="col-xs-3">
-								<div class="about-icon about-icon-3"></div>
-								<p class="about-text">Собственная кухня в Киеве</p>
-							</div>
-							<div class="col-xs-3">
-								<div class="about-icon about-icon-4"></div>
-								<p class="about-text">Доставка в удобное место и время</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-3">
-								<div class="about-icon about-icon-5"></div>
-								<p class="about-text">Ингредиенты высочайшего качества</p>
-							</div>
-							<div class="col-xs-3">
-								<div class="about-icon about-icon-6"></div>
-								<p class="about-text">Специальные контейнеры блюда которых можно разогревать в духовке или микроволновой печи</p>
-							</div>
-							<div class="col-xs-3">
-								<div class="about-icon about-icon-7"></div>
-								<p class="about-text">Сумка-контейнер обеспечивающий сохранность продуктов</p>
-							</div>
-							<div class="col-xs-3">
-								<div class="about-icon about-icon-8"></div>
-								<p class="about-text">Легко соблюдать режим питания</p>
+							<div class="row">
+								<div class="col-xs-3">
+									<div class="about-icon about-icon-5"></div>
+									<p class="about-text">Ингредиенты высочайшего качества</p>
+								</div>
+								<div class="col-xs-3">
+									<div class="about-icon about-icon-6"></div>
+									<p class="about-text">Специальные контейнеры блюда которых можно разогревать в духовке или микроволновой печи</p>
+								</div>
+								<div class="col-xs-3">
+									<div class="about-icon about-icon-7"></div>
+									<p class="about-text">Сумка-контейнер обеспечивающий сохранность продуктов</p>
+								</div>
+								<div class="col-xs-3">
+									<div class="about-icon about-icon-8"></div>
+									<p class="about-text">Легко соблюдать режим питания</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 		<div class="section section-13 ask-box">
