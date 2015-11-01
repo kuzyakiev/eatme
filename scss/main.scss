@@ -274,8 +274,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-4 {
-			top: 300px;
-			right: 100px;
+			top: 420px;
+			right: 290px;
 			transform: rotate(138deg);
 
 			animation: arrow-4 $animationTime ease 0s infinite alternate;
@@ -285,8 +285,8 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-5 {
-			top: 290px;
-			left: 60px;
+			top: 390px;
+			left: 250px;
 			transform: rotate(-117deg);
 
 			animation: arrow-5 $animationTime ease 0s infinite alternate;
@@ -296,8 +296,9 @@ body.fp-viewing-12 {
 			}
 		}
 		&.food-arrow-6 {
-			top: 390px;
-			left: 250px;
+			
+			top: 150px;
+			left: 430px;
 			transform: rotate(9deg);
 
 			animation: arrow-6 $animationTime ease 0s infinite alternate;
